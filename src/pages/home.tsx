@@ -24,7 +24,7 @@ const Home = () => {
   return (
     <div className="home">
       <section>
-        <img className="home_image" src="./src/assets/cover.jpg" alt="" />
+{/*         <img className="home_image" src="./src/assets/cover.jpg" alt="" /> */}
       </section>
 
       <h1>
