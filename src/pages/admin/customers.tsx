@@ -15,7 +15,7 @@ import { CustomError } from "../../types/api-types";
 import { responseToast } from "../../utils/features";
 
 interface DataType {
-  avatar: ReactElement;
+  // avatar: ReactElement;
   name: string;
   email: string;
   gender: string;
