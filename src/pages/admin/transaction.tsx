@@ -16,7 +16,7 @@ interface DataType {
   discount: number;
   quantity: number;
   status: ReactElement;
-  action: ReactElement;
+  // action: ReactElement;
 }
 
 const columns: Column<DataType>[] = [
@@ -40,10 +40,10 @@ const columns: Column<DataType>[] = [
     Header: "Status",
     accessor: "status",
   },
-  {
-    Header: "Action",
-    accessor: "action",
-  },
+  // {
+  //   Header: "Action",
+  //   accessor: "action",
+  // },
 ];
 
 const Transaction = () => {
@@ -79,7 +79,7 @@ const Transaction = () => {
               {i.status}
             </span>
           ),
-          action: <Link to={`/admin/transaction/${i._id}`}>Manage</Link>,
+          // action: <Link to={`/admin/transaction/${i._id}`}>Manage</Link>,
         }))
       );
   }, [data]);
