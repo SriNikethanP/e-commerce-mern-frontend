@@ -42,6 +42,7 @@ const Login = () => {
 
       if (res.data) {
         toast.success(res.data.message);
+
         const data = await getUser(user.uid);
         dispatch(userExist(data?.user!));
       } else {
@@ -51,7 +52,8 @@ const Login = () => {
         dispatch(userNotExist());
       }
     } catch (error) {
-      toast.error("Sign In Fail");
+      // toast.error("Sign In Fail");
+      console.log(error);
     }
   };
 
